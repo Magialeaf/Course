@@ -1,0 +1,43 @@
+/*表格样式*/
+.content .result tr .log_username
+{
+    width: 15%;
+    height: 32px;
+}
+.content .result tr .log_name
+{
+    width: 15%;
+    height: 32px;
+}
+.content .result tr .log_time
+{
+    width: 15%;
+    height: 32px;
+}
+.content .result tr .log_IP
+{
+    width: 15%;
+    height: 32px;
+}
+.content .result tr .log_event
+{
+    width: 20%;
+    height: 32px;
+}
+.content .result tr .log_note
+{
+    width: 20%;
+    height: 32px;
+}
+
+/*字体样式*/
+.content .result td span
+{
+    box-sizing : border-box ;
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 13px;
+    padding-top: 8px;
+    text-indent: 1.5em;
+}

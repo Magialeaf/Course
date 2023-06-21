@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html  lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>社区住户在线投诉管理信息系统</title>
+		<link rel="stylesheet" href="css/login_page.css">
+	</head>
+<!DOCTYPE html>
+<html>
+<body>
+	<div class="login_page">
+		<div class="login_title">
+			<h1>社区住户在线投诉管理信息系统登录</h1>
+			<p>SHE QU ZHU HU ZAI XIAN TOU SU GUAN LI XIN XI XI TONG DENG LU</p>
+		</div>
+		<form class="login_form" action="inc/check_login.php" method="POST" onsubmit="return check_login();">
+			<p>
+				<input type="text" id="username" name="username" placeholder="账号" autocomplete="off"/>
+			</p>			
+			<p>
+				<input type="password" id="password" name="password" placeholder="●●●●●●" autocomplete="off"/>
+			</p>
+			<p id="res_tip"></p>
+			<p>
+				<button type="button" onclick="jump_register()">注册</button>
+				<button type="submit" name="login" value="login">登录</button>
+			</p>
+		</form>
+	</div>
+	<script src="js/login_page.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+</html>

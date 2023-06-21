@@ -1,0 +1,84 @@
+/*标题样式*/
+.content .read_title
+{
+    width: 80%;
+    color: rgb(72, 101, 157);
+    border-top: 5px rgb(72, 101, 157) solid;
+    border-bottom: 5px rgb(72, 101, 157) solid;
+    margin: 30px 0px 50px 10%;
+    padding: 0px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 22px;
+
+}
+/*块样式*/
+.content .user_request
+{
+    margin-top: 20px;
+    margin-left: 12%;
+    width: 76%;
+}
+.content .read_complaint .user_request .show_border
+{
+    margin-top: 15px;
+    border-bottom: 2px rgb(72, 101, 157) solid;
+    min-height: 32px;
+}
+.content .read_complaint .user_request .show_border .one_row
+{
+    width: 50%;
+    float: left;
+}
+/*文本样式*/
+.content .read_complaint .user_request .show_border span
+{
+    font-size: 16px;
+    color: rgb(72, 101, 157);
+}
+.content .read_complaint .user_request .show_border span.read_tip
+{
+    font-weight: bold;
+}
+
+.content .read_complaint .user_request .show_border pre
+{
+    padding: 5px 0px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 16px;
+    color: rgb(72, 101, 157);
+}
+
+/*回复样式*/
+.content .answer_form 
+{
+    display: flex;
+    align-items: center;
+    margin: 50px 0px 0px 12%;
+    height: 140px;
+    width: 76%;
+}
+.content .answer_form .answer_content
+{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    border: 2px #3f51b5 solid;
+    font-size: 16px;
+    resize: none;
+}
+
+.content .answer_form .answer
+{
+    margin-left: 40px;
+    padding: 8px 12px;
+    background-color: #2196f3;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    background: rgb(21, 146, 239);
+	border-radius: 10px;
+	text-shadow:2px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow:2px 2px 1px rgba(0, 0, 0, 0.2);
+}

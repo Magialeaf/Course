@@ -1,0 +1,379 @@
+/*整体设计*/
+*{
+    padding: 0;
+    margin: 0;
+	border: 0;
+}
+body
+{
+    height: 720px;
+    background: linear-gradient(to bottom,#3f51b5 50%,white 50%);
+    background-repeat: no-repeat;
+}
+
+/*顶端栏*/
+.header
+{
+    position: fixed;
+    height: 45px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: #354498; 
+}
+.header h1{
+    float: left;
+    color: white;
+    font-size: 26px;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+/*顶端选项栏*/
+.top{
+    margin-right: 37px;
+    height: 45px;
+    overflow: hidden;
+}
+.top dt
+{
+    width: 90px;
+    height: 42px;
+    margin: 0px 2px;
+    background-color: #354498;
+    float: right;
+}
+.top dt.head_img
+{
+    width: 40px;
+    background:  url(../img/login_username.png) no-repeat;
+    background-size: 99%;
+    cursor: pointer;
+}
+.top dt.user_id
+{
+    height: 25px;   
+    width: 100px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-indent: 1em;
+    line-height: 24px;
+    color: white;
+    cursor: pointer;
+}
+.top dt.user_id div.user_id_content
+{
+    height: 25px;   
+    width: 100px; 
+}
+.top dt.user_id div.user_id_content:after
+{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    margin-left: 5px;
+}
+.top dt a
+{
+    display: block;
+    color: #bec3de;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: #efbf00 5px solid;
+    cursor: pointer;
+}
+.top dt a:hover
+{
+    color: white;
+}
+/*顶部的隐藏属性*/
+.top .head_img .info-box
+{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 95%;
+    top: 45px;
+    width: 160px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    display: none;
+}
+.top .head_img .info-box span
+{
+    display: block;
+    font-size: 14px;
+    color: black;
+}
+.top .user_id .identity-box
+{
+    position: absolute;
+    top: 45px;
+    left: 91%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    overflow: hidden;
+    display: none;
+}
+
+.top .user_id .identity-box span
+{
+    display: block;
+    padding-left: 10px;
+    cursor: default;
+    color: black;
+    font-size: 14px;
+}
+.top .user_id .identity-box button
+{
+    display: block;
+    color: black;
+    font-size: 13px;
+    height: 28px;
+    width: 100%;
+    padding: 5px 0px;
+    text-align: center;
+    background-color: #fff;
+}
+.top .user_id .identity-box button:hover
+{
+    background-color: rgb(238, 251, 252);
+    display: block;
+}
+
+
+/*主体文本*/
+.content
+{
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0,0,0,.28);
+    padding-top: 1px; /*设置1点保证子元素的margin-top不会导致父元素移动*/
+    margin: 45px 30px 0px;
+    min-height: 620px;
+    background-color: #fff;
+    clear: both;
+}
+/*搜索栏*/
+.content h2
+{
+    color: gray;
+    font-size: 20px;
+    padding: 20px 0px 20px 10px;
+}
+.content .select_sql .select_form p input
+{
+    box-sizing : border-box ;
+    height: 28px;
+    width: 380px;
+    background: url(../img/main_search.png) no-repeat;
+    background-size: 4%;
+    background-position: 5px 5px;
+    padding-left: 25px;
+    margin-left: 22px;
+    font-size: 12px;
+    border: 1px solid gray;
+}
+.content .select_sql .select_form p button
+{
+    margin-top: 1px;
+    height: 28px;
+    width: 60px;
+    color: #fff;
+    font-size: 13px;
+    background-color: #2196f3;
+    cursor: pointer;
+}
+.content .select_sql .select_form button:hover
+{
+    box-shadow: 0px 0px 1px 1px gray;
+}
+/*选择栏*/
+.content .select_sql .classification
+{
+    height: 80px;
+}
+.content .select_sql .classification dt
+{
+    margin: 10px 6px 10px 22px;
+    font-size: 13px;
+    color: gray;
+    float: left;
+    clear: left;
+}
+
+.content .select_sql .classification label
+{
+    display: inline-block;
+    margin-top: 7px;
+    margin-right: 1px;
+    padding: 3px 3px 3px 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.content .select_sql .classification input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.content .select_sql .write
+{
+    margin: 10px 0px 10px 25px;
+    padding: 8px 12px;
+    background-color: #2196f3;
+    color: #fff;
+    font-size: 14px;
+    clear: both;
+    cursor: pointer;
+}
+/*结果栏的列表结构*/
+.content .result
+{
+    width: 96%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-collapse: collapse;
+}
+.content .result tr
+{
+    width: 100%;
+    height: 10%;
+}
+.content .result tr .option
+{
+    width: 8%;
+    height: 32px;
+}
+.content .result tr .number
+{
+    width: 17%;
+    height: 32px;
+}
+.content .result tr .title
+{
+    width: 40%;
+    height: 32px;
+}
+.content .result tr .staff
+{
+    width: 15%;
+    height: 32px;
+}
+.content .result tr .time
+{
+    width: 12%;
+    height: 32px;
+}
+.content .result tr .state
+{
+    width: 8%;
+    height: 32px;
+}
+/*结果栏结果*/
+.content .result tr td
+{
+    border: #d8dcf0 1px solid;
+}
+.content .result .result_tip td div
+{
+    box-sizing : border-box ;
+    height: 100%;
+    width: 100%;
+    padding-top: 8px;
+    background-color: #f7f8fc;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+.content .result .result_value td button
+{
+    box-sizing : border-box ;
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 13px;
+    color:#2196f3;
+    background-color: #fff;
+    text-align: center;
+    line-height: 8px;
+    cursor: pointer;
+}
+.content .result .result_value td span
+{
+    box-sizing : border-box ;
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 13px;
+    padding-top: 8px;
+    text-indent: 1.5em;
+}
+/*选择页面*/
+.content .turn_page
+{
+    padding-top: 32px;
+    height: 32px;
+    width: 100%;
+}
+.content .all_pages
+{
+    float: right;
+    padding: 5px 40px 0 0;
+    height: 100%;
+}
+.content .turn_page .turn_left,.content .turn_page .turn_right
+{
+	width: 60px;
+	height: 100%;
+	font-size: 12px;
+	color: #fff;
+	margin-left: 20px;
+	margin-right: 20px;
+	background: rgb(21, 146, 239);
+	border-radius: 10px;
+	text-shadow:2px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow:2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor:pointer;
+}
+.content .all_pages .page_value
+{
+    border: 2px rgb(21, 146, 239) solid;
+    background: rgb(21, 146, 239);
+    font-size: 14px;
+    padding: 0px 3px;
+    color: white;
+}
+/*页脚*/
+.content .footer
+{
+    position: absolute;
+    width: 100%;
+    height: 32px;
+    color: white;
+    background-color: #354498;
+    font-size: 13px;
+    line-height: 30px;
+    text-align: center;
+    bottom: -32px;
+}
+
+/*默认选中社区投诉*/
+#community_complaints
+{
+    color: white;
+}

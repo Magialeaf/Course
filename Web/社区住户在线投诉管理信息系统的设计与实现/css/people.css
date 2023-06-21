@@ -1,0 +1,41 @@
+/*数据样式*/
+div.information
+{
+    padding-top: 80px;
+    padding-left: 18%;
+	width: 100%;
+}
+div.information p{
+	margin-left: 280px;
+	margin-bottom: 20px;
+    width: 20%;
+	background-repeat: no-repeat;
+	background-size: 8%;
+	background-position: 8px 50%;
+	background-color: rgb(238, 246, 253);
+	font-size: 16px;
+    font-weight: bold;
+}
+div.information p span{
+	font-size: 15px;
+    text-indent: 1em;
+    font-weight: 400;
+}
+
+/*退出*/
+.content .exit
+{
+    display: block;
+    width: 100px;
+	height: 35px;
+	font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+	color: #fff;
+    margin-left: 48%;
+    padding-top: 10px;
+	background: rgb(21, 146, 239);
+	border-radius: 10px;
+	text-shadow:2px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow:2px 2px 1px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,12 @@
+/* 主页格式设置 */
+.content .login_page{
+    top:50%;
+    left:50%;
+    width: 960px;
+	min-height: 560px;
+    margin-left: -480px;
+}
+
+.content .login_form p button{
+	margin-left: 90px;
+}

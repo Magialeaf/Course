@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html  lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>社区住户账户注册</title>
+		<link rel="stylesheet" href="css/register_page.css">
+	</head>
+<!DOCTYPE html>
+<html>
+<body>
+	<div class="login_page">
+		<div class="login_title">
+			<h1>社区住户账户注册</h1>
+			<p>SHE QU ZHU HUI ZHANG HU ZHU CE</p>
+		</div>
+		<form class="login_form" action="inc/check_register.php" method="POST" onsubmit="return check_register();">
+			<p>
+				<input type="text" id="username" name="username" placeholder="账号" autocomplete="off"/>
+			</p>			
+			<p>
+				<input type="password" id="password"  name="password" placeholder="密码" autocomplete="off"/>
+			</p>
+			<p>
+				<input type="password" id="repassword" name="repassword" placeholder="确认密码" autocomplete="off"/>
+			</p>
+			<p>
+				<input type="text" id="No" name="No" placeholder="房号" autocomplete="off"/>
+			</p>	
+			<p>
+				<input type="text" id="name" name="name" placeholder="姓名" autocomplete="off"/>
+			</p>	
+			<p>
+				性别：
+				<label><input type="radio" id="sex" name="sex" value="male" checked="checked">男</label>
+				<label><input type="radio" id="sex" name="sex" value="female">女</label>
+			</p>	
+			<p>
+				<input type="text" id="work" name="work" placeholder="职业" autocomplete="off"/>
+			</p>	
+			<p>
+				入住时间：<input type="datetime-local" id="time" name="time" placeholder="入住时间" autocomplete="off"/>
+			</p>
+			<p>
+				<input type="text" id="area" name="area" placeholder="住房面积(单位平方米)" autocomplete="off"/>
+			</p>
+			<p>
+				<input type="text" id="people" name="people" placeholder="常驻人口" autocomplete="off"/>
+			</p>
+			<p>
+				<input type="text" id="phone" name="phone" placeholder="联系电话" autocomplete="off"/>
+			</p>
+			<p>
+				<button type="submit" name="register" value="register">注册</button>
+			</p>
+		</form>
+	</div>
+	<script src="js/register_page.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+</html>

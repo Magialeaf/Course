@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+	border: 0;
+}
+
+body{
+	background: url("../img/login_background.jpg") repeat-x;
+	background-color: rgb(229, 232, 237);
+	height: 100%;
+}
+html{
+    height:100%;
+}
+
+/* 主页格式设置 */
+.login_page{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 960px;
+	height: 560px;
+    margin-left: -480px;
+    margin-top: -280px;
+	overflow: hidden;
+}
+
+/* 标题栏设置 */
+.login_title h1{
+    color: #fff;
+    padding: 6px;
+	text-align: center;
+}
+.login_title p{
+	color: #fff;
+	font-size: 8px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+/* 文本栏设置 */
+.login_form{
+	background: url("../img/login_form.png") no-repeat;
+	background-size: 52%;
+	background-color: #fff;
+	background-position-y: 50%;
+	width: 100%;
+	height: 440px;
+}
+.login_form p{
+	margin-left: 480px;
+	margin-bottom: 25px;
+}
+.login_form p#res_tip {
+	height: 1px;
+	transform: translateY(-10px);
+	color: red;
+	font-size: 13px;
+}
+.login_form p input{
+	width: 360px;
+	height: 55px;
+	padding-left: 55px;
+	background-repeat: no-repeat;
+	background-size: 8%;
+	background-position: 8px 50%;
+	background-color: rgb(238, 246, 253);
+	font-size: 16px;
+}
+.login_form p input[type="text"]{
+	margin-top: 110px;
+	background-image: url("../img/login_username.png");
+}
+.login_form p input[type="password"]{
+	background-image: url("../img/login_password.png");
+}
+.login_form p button{
+	width: 120px;
+	height: 45px;
+	font-size: 19px;
+	color: #fff;
+	margin-left: 20px;
+	margin-right: 80px;
+	background: rgb(21, 146, 239);
+	border-radius: 10px;
+	text-shadow:2px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow:2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.login_form p button:hover{
+	cursor:pointer;
+	background: rgb(85, 170, 255);
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
